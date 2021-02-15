@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="cutome-css/custom-style.css">
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fdead9a902.js" crossorigin="anonymous"></script>
+    <title>Kokoro Zen</title>
+  </head>
+ <body>
+  <div class="container main">
+  <header>
+       
+  <nav class="navbar ">
+    <a class="navbar-brand">
+    <img src="images/logoSmall.png" alt="" width="150" height="26">
+    </a>
+    <div class="d-flex button-group w-auto">
+      <button type="button" class="btn  btn-success mx-1" data-toggle="modal" data-target="#exampleModalCenter">Registrarse</button>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterLongTitle">Bienvenido!</h5>
+              </button>
+            </div>
+            <div class="modal-body">
+              <main class="form-signin">
+                <form>
+                  <img class="mb-4" src="images/logoSmall.png" alt="" width="150" height="26">
+                 
+                  <label for="inputEmail" class="visually-hidden">Email</label>
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <br>
+                  <label for="inputPassword" class="visually-hidden">Contraseña</label>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <div class="checkbox mb-3 check1">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Recordarme
+                    </label>
+                  </div>
+                  <p class="check2">
+                    <a href="#">  olvidé la Contraseña</a>
+                  
+                  </p>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarme</button>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+                </form>
+              </main>
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-success">Quiero Suscribirme</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-success mx-1 " data-toggle="modal" data-target="#exampleModalCenter2">Suscribirse</button>
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter2Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenter2LongTitle">Bienvenido!!</h5>
+           
+          </div>
+          <div class="modal-body">
+            <main class="form-signin">
+              <form>
+                <img class="mb-4" src="images/logoSmall.png" alt="" width="150" height="26">
+                <label for="name" class="visually-hidden">Nombre</label>
+                <input type="text" id="inputName" class="form-control"
+                placeholder="Nombre" required autofocus>
+                <br>
+                <label for="Apellidos" class="visually-hidden">Apellidos</label>
+                <input type="text" id="inputName" class="form-control" 
+                placeholder="Apellidos" required autofocus>
+                <br>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                <br>
+                <label for="inputPassword" class="visually-hidden">Crea una Contraseña</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Crea una Contraseña" required>
+                <br>
+                <label for="inputPassword" class="visually-hidden">Repite la Contraseña</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Repite la Contraseña" required>
+                <div class="checkbox mb-3 check1">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Acepto los términos y condiciones
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Crear Cuenta</button>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2021</p> 
+            </form>  
+            </main>
+          </div>                                                     
+             <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Ya tengo Cuenta </button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>  
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>           
+</nav>
+<div class="container ">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+     
+             
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">QUIÉNES SOMOS </a>
+    </li>
+    <div class="dropdown">
+      <button type="button" class="btn  btn-warning dropdown-toggle ddb" data-toggle="dropdown">
+      CONTENIDO
+      </button>
+      <div class="dropdown-menu dropdownbg">
+        <a class="dropdown-item" href="#">MEDITACIONES</a>
+        <a class="dropdown-item" href="#">CRECIMIENTO PERSONAL</a>
+        <a class="dropdown-item" href="#">MÚSICA RELAJANTE</a>
+        <a class="dropdown-item" href="#">AUDIOCUENTOS</a>
+        <a class="dropdown-item" href="#">KOKORO KIDS</a>
+        </div>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACTO</a>
+      </li>
+   </ul>
+   <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary search" type="button">
+      <i class="fas fa-search search"></i>
+      </button>
+    </form>
+  </div>
+</nav>
+ </div>
+</header>
+
+<div class="container main menu">     
+<div id="carouselExampleIndicators" class="carousel cabecera" data-ride="carousel" data-pause="hover" data-interval=2000>
+  <div class="carousel-inner" role="listbox">
+  <div class="carousel-item active medit">
+  <img class="d-block w-100 " src="images/meditaciones-guiadas.png" 
+           data-src="holder.js/900x400?theme=social" alt="First slide">
+   <div class="carousel-caption d-none d-md-block titulo">
+   <h1 class="basetitulo">Meditaciones Guiadas</h>
+  </div>
+</div>
+  <div class="carousel-item">
+  <img class="d-block w-100 cuento" src="images/cuentos-mayores.png" data-src="holder.js/900x400?theme=industrial" alt="Second slide">
+  <div class="carousel-caption d-none d-md-block">
+  <h1 class="basetitulo1" >Cuentos Sanadores</h1>
+  </div>
+</div>
+  <div class="carousel-item">
+  <img class="d-block w-100 child" src="images/musica-relajante.png" data-src="holder.js/900x400?theme=industrial" alt="third slide">
+  <div class="carousel-caption d-none d-md-block">
+  <h1 class="basetitulo2">Música Relajante</h1>
+  </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+</div> 
+
+<section class="container medium ">
+  <h4 class=" medium-tittle" >TU ESPACIO DE PAZ Y BIENESTAR INTERIOR</h4>
+  <div class="row">
+  <div class="col-lg-3 col-md-6 features">
+  <div class="card effect1">
+  <i class="fas fa-spa icon1"></i>
+   <div class="card-body">
+      <h5 class="card-title"> Meditaciones Guiadas</h5>
+      <p class="card-text">Aprende a meditar desde cero y practica con nuestras meditaciones temáticas.</p>
+      <br>
+      <a href="#" class="btn btn-success">Empezar</a>
+    </div>
+  </div>
+  </div>
+ 
+  <div class="col-lg-3 col-md-6 features" >
+    <div class="card effect2">
+    <i class="fas fa-heart icon2"></i>
+    <div class="card-body">
+      <h5 class="card-title">Crecimiento Personal</h5>
+      <p class="card-text">Audiocuentos y podcast para pensar y conectar contigo mismo .</p>
+      <br>
+      <a href="#" class="btn btn-warning">Explorar</a>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-6 features" >
+    <div class="card effect3">
+    <i class="fas fa-music icon3"></i>
+    <div class="card-body">
+      <h5 class="card-title">  Musica Relajante</h5>
+      <p class="card-text">Música creada por nosotros para ayudarte a dormir, estudiar, trabajar o relajarte.</p>
+      <br>
+      <a href="#" class="btn btn-primary">Escuchar</a>
+    </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 features" >
+    <div class="card effect4">
+    <i class="fas fa-child icon4"></i>
+    <div class="card-body">
+      <h5 class="card-title"> Kokoro kids</h5>
+      <p class="card-text">Cuentos y meditaciones para ayudar a tus niños a relajarse y entretenerse.</p>
+      <br>
+      <a href="#" class="btn btn-danger">Acceder</a>
+    </div>
+  </div>
+  </div> 
+</section>
+ <section class="container 
+ videos">
+ <h4>Los más vistos</h4>
+ <br>
+<div class="row video-card ">
+  <div class="col-lg-3  col-md-6 ">
+    <div class="card">
+      <div class="card-body video1">
+        <a target="_blank" href="media/Meditacion guiada práctica 1.mp4">
+          <img src="images/med-guiada1.png" alt="meditacion">
+        </a>
+        <p class="card-text tittle">meditacion Guiada Practica I </p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-md-6 ">
+    <div class="card">
+      <div class="card-body video1">
+        <a target="_blank" href="media/Meditacion guiada práctica 1.mp4">
+          <img src="images/med-guiada1.png" alt="meditacion">
+        </a>
+        <p class="card-text tittle">meditacion Guiada Practica I </p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-md-6 ">
+    <div class="card">
+      <div class="card-body video1">
+        <a target="_blank" href="media/Meditacion guiada práctica 1.mp4">
+          <img src="images/med-guiada1.png" alt="meditacion">
+        </a>
+        <p class="card-text tittle">meditacion Guiada Practica I </p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-md-6 ">
+    <div class="card ">
+      <div class="card-body video1">
+        <a target="_blank" href="media/Meditacion guiada práctica 1.mp4">
+          <img src="images/med-guiada1.png" alt="meditacion">
+          
+        </a>
+        <p class="card-text tittle">meditacion Guiada Practica I </p>
+     </div>
+    </div>
+   </div>
+  </div>
+<div class="d-grid  col-4 mx-auto">
+  <button class="btn btn-warning ver" type="button">Ver todos los vídeos</button>
+</div>
+</section>
+<div class="container">
+  <footer class=" pie">
+   
+      <div class="row">
+        <div class="col-lg-4 col-md-6 logopie">
+          <img src="images/logoSmall.png" alt="">
+          <br>
+          <br>
+       </div>
+        <div class="col-lg-4 col-md-6  linkspie">
+        <ul class="list-unstyled pielinks">
+            <li>
+              <a href="#!" class="text-dark">Preguntas Frecuentes</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Terminos y Condiciones</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Aviso Legal</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Contacto</a>
+            </li>
+          </ul>
+        </div>
+       
+        <div class="col-lg-4 col-md-12  social ">
+          <p class="text-dark">Síguenos</p>
+          
+          <ul class="list-unstyled icons">
+            <li>
+              <a href="#!" class="text-dark "><i class="fab fa-facebook iconos"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark "><i class="fab fa-youtube iconos"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark "> <i class="fab fa-pinterest-square iconos"></i></a>
+            </li>
+           
+          </ul>
+        </div>
+        
+      </div>
+     
+    </div>
+    
+   
+    <div class=" container text-center p-3 copy" >
+      © 2020 Copyright:
+      <a class="text-dark" href="#">Kokorozen.com</a>
+    </div>
+  
+  </footer>
+</div>
+ </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+     <!--Bootstrap Bundle with Popper --> 
+   <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    
+
+  </body>
+</html>
