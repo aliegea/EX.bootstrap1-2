@@ -126,25 +126,25 @@ transform: scale(1.1);
 }
 .icon1{
     color:#71cc98;
-    transform: scale(3);
+    font-size: 45px;
     text-align: center;
     padding: 20px;
 }
 .icon2{
     color:#f1c532;
-    transform: scale(3);
+    font-size: 45px;
     text-align: center;
     padding: 20px;
 }
 .icon3{
     color:#3d9dbd;
-    transform: scale(3);
+    font-size: 45px;
     text-align: center;
     padding: 20px;
 }
 .icon4{
     color:#f0795f;
-    transform: scale(3);
+    font-size: 45px;
     text-align: center;
     padding: 20px;
 }
