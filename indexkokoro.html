@@ -26,48 +26,47 @@
     <img src="images/logoSmall.png" alt="" width="150" height="26">
     </a>
     <div class="d-flex button-group w-auto">
-      <button type="button" class="btn  btn-success mx-1" data-toggle="modal" data-target="#exampleModalCenter">Registrarse</button>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <button type="button" class="btn  btn-success mx-1 btnHome" data-toggle="modal" data-target="#modalRegistro">Registrarse</button>
+      <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterLongTitle">Bienvenido!</h5>
-              </button>
             </div>
             <div class="modal-body">
+              <!-- formulario log in -->
               <main class="form-signin">
-                <form>
-                  <img class="mb-4" src="images/logoSmall.png" alt="" width="150" height="26">
+                <form id="loGin" method="POST" class="needs-validation" novalidate>
+                  <img class="mb-4 logoModal" src="images/logoSmall.png" alt="" width="150" height="26">
                  
-                  <label for="inputEmail" class="visually-hidden">Email</label>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="userMail" class="visually-hidden">Usuario</label>
+                  <input type="email" id="userMail" class="form-control"  placeholder="Email"  >
+                  <div class="invalid-feedback" id="errorLogin"></div>
+                  
+                  
                   <br>
-                  <label for="inputPassword" class="visually-hidden">Contraseña</label>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <div class="checkbox mb-3 check1">
-                    <label>
-                      <input type="checkbox" value="remember-me"> Recordarme
-                    </label>
-                  </div>
-                  <p class="check2">
-                    <a href="#">  olvidé la Contraseña</a>
+                  <label for="loginPassword" class="visually-hidden">Contraseña</label>
+                  <input type="password" id="loginPassword" class="form-control" placeholder="Password" >
+                  <div class="invalid-feedback" id="errorLoginPas"></div>
+                   
+                    <a href="#">  olvidé nombre de usuario o contraseña</a>
                   
                   </p>
-                  <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarme</button>
+                  <button class="w-100 btn btn-lg btn-primary " type="submit">Registrarme</button>
                   <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
                 </form>
               </main>
             </div>
             <div class="modal-footer">
               
-              <button type="button" class="btn btn-success">Quiero Suscribirme</button>
+              <button type="button" class="btn btn-success btnHome">Quiero Suscribirme</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
       </div>
-   <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-success mx-1 " data-toggle="modal" data-target="#exampleModalCenter2">Suscribirse</button>
+   <!-- Button to Open the Modal Suscribirse-->
+    <button type="button" class="btn btn-success mx-1 btnHome" data-toggle="modal" data-target="#exampleModalCenter2">Suscribirse</button>
     <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter2Title" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -77,29 +76,101 @@
           </div>
           <div class="modal-body">
             <main class="form-signin">
-              <form>
+              <!-- formulario de suscripcion -->
+              <form method="" action="" id="myFormRg" name="myFormRg" class="needs-validation" novalidate >
                 <img class="mb-4" src="images/logoSmall.png" alt="" width="150" height="26">
-                <label for="name" class="visually-hidden">Nombre</label>
-                <input type="text" id="inputName" class="form-control"
+                <!-- inicio campos formulario -->
+                <!-- <label for="name" class="visually-hidden">Nombre</label>
+                <input type="text" id="usuarioName" class="form-control"
                 placeholder="Nombre" required autofocus>
                 <br>
                 <label for="Apellidos" class="visually-hidden">Apellidos</label>
-                <input type="text" id="inputName" class="form-control" 
+                <input type="text" id="surname" class="form-control" 
                 placeholder="Apellidos" required autofocus>
+                <br> -->
+                <label for="userName" class="visually-hidden">Nombre de Usuario</label>
+                <input type="text" name="userName" id="userName" class="form-control" 
+                placeholder="Nombre de Usuario">
+                <div class="invalid-feedback" id="ErrorUsuario"></div>
                 <br>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                <label for="inputEmail" class="visually-hidden">Email</label>
+                <input type="text" id="inputEmail" name="inputEmail" class="form-control"  placeholder="Email">
+                <div class="invalid-feedback" id="errorEmail"></div>
                 <br>
                 <label for="inputPassword" class="visually-hidden">Crea una Contraseña</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Crea una Contraseña" required>
+                <input type="password" id="password" name="password" class="form-control " placeholder="Crea una Contraseña">
+                <div class="invalid-feedback" id="errorPassword"></div>
                 <br>
-                <label for="inputPassword" class="visually-hidden">Repite la Contraseña</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Repite la Contraseña" required>
-                <div class="checkbox mb-3 check1">
-                  <label>
-                    <input type="checkbox" value="remember-me"> Acepto los términos y condiciones
-                  </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Crear Cuenta</button>
+                <label for="inputPassword2" class="visually-hidden">Repite la Contraseña</label>
+                <input type="password" id="password2" name="password2" class="form-control " placeholder="Repite la Contraseña">
+                <div class="invalid-feedback" id="errorPassword2"></div>
+                <br>
+                <label for="inputProvince" class="visually-hidden" >Provincia</label>
+                <select id="inputProvince" class="form-control" >
+                  
+                  <option hidden selected="">Selecciona una Provincia</option>
+                  <option value='alava'>Álava</option>
+                   <option value='albacete'>Albacete</option>
+    <option value='alicante'>Alicante/Alacant</option>
+    <option value='almeria'>Almería</option>
+    <option value='asturias'>Asturias</option>
+    <option value='avila'>Ávila</option>
+    <option value='badajoz'>Badajoz</option>
+    <option value='barcelona'>Barcelona</option>
+    <option value='burgos'>Burgos</option>
+    <option value='caceres'>Cáceres</option>
+    <option value='cadiz'>Cádiz</option>
+    <option value='cantabria'>Cantabria</option>
+    <option value='castellon'>Castellón/Castelló</option>
+    <option value='ceuta'>Ceuta</option>
+    <option value='ciudadreal'>Ciudad Real</option>
+    <option value='cordoba'>Córdoba</option>
+    <option value='cuenca'>Cuenca</option>
+    <option value='girona'>Girona</option>
+    <option value='laspalmas'>Las Palmas</option>
+    <option value='granada'>Granada</option>
+    <option value='guadalajara'>Guadalajara</option>
+    <option value='guipuzcoa'>Guipúzcoa</option>
+    <option value='huelva'>Huelva</option>
+    <option value='huesca'>Huesca</option>
+    <option value='illesbalears'>Illes Balears</option>
+    <option value='jaen'>Jaén</option>
+    <option value='acoruña'>A Coruña</option>
+    <option value='larioja'>La Rioja</option>
+    <option value='leon'>León</option>
+    <option value='lleida'>Lleida</option>
+    <option value='lugo'>Lugo</option>
+    <option value='madrid'>Madrid</option>
+    <option value='malaga'>Málaga</option>
+    <option value='melilla'>Melilla</option>
+    <option value='murcia'>Murcia</option>
+    <option value='navarra'>Navarra</option>
+    <option value='ourense'>Ourense</option>
+    <option value='palencia'>Palencia</option>
+    <option value='pontevedra'>Pontevedra</option>
+    <option value='salamanca'>Salamanca</option>
+    <option value='segovia'>Segovia</option>
+    <option value='sevilla'>Sevilla</option>
+    <option value='soria'>Soria</option>
+    <option value='tarragona'>Tarragona</option>
+    <option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+    <option value='teruel'>Teruel</option>
+    <option value='toledo'>Toledo</option>
+    <option value='valencia'>Valencia/Valéncia</option>
+    <option value='valladolid'>Valladolid</option>
+    <option value='vizcaya'>Vizcaya</option>
+    <option value='zamora'>Zamora</option>
+    <option value='zaragoza'>Zaragoza</option>
+                  </select>
+                <div class="invalid-feedback" id="errorProvince"></div>
+                  br
+                <div class="form-check check1">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label " for="gridCheck">He Leído y acepto la política de Privacidad</label>
+                <div class="invalid-feedback" id="errorCheck"></div>    -->
+
+                </div> -->
+                <button class="w-100 btn btn-lg btn-primary " type="submit">Crear Cuenta</button>
                   <p class="mt-5 mb-3 text-muted">&copy; 2021</p> 
             </form>  
             </main>
@@ -116,17 +187,16 @@
     </div>
   </div>           
 </nav>
-<div class="container ">
+
  <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-     
-             
+  <div class="container ">       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+    <li class="nav-item active">
+    <a class="nav-link " aria-current="page" href="#">HOME</a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="#">QUIÉNES SOMOS </a>
@@ -135,23 +205,26 @@
       <button type="button" class="btn  btn-warning dropdown-toggle ddb" data-toggle="dropdown">
       CONTENIDO
       </button>
-      <div class="dropdown-menu dropdownbg">
+      <ul class="dropdown-menu dropdownbg">
         <a class="dropdown-item" href="#">MEDITACIONES</a>
         <a class="dropdown-item" href="#">CRECIMIENTO PERSONAL</a>
         <a class="dropdown-item" href="#">MÚSICA RELAJANTE</a>
         <a class="dropdown-item" href="#">AUDIOCUENTOS</a>
         <a class="dropdown-item" href="#">KOKORO KIDS</a>
-        </div>
+      </ul>
       </div>
       <li class="nav-item">
         <a class="nav-link" href="#">CONTACTO</a>
       </li>
    </ul>
-   <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary search" type="button">
+  <!-- Barra de busqueda -->
+   <form class="d-flex form-group " method='post' action="" id="searchForm">
+      <input type="search"  id="mySearch" name="q" class="form-control me-2"  placeholder="buscar" minlength="3">
+      <div class="invalid-feedback searchError" id="errorSearch"></div>
+      <button class="btn  btnBuscador" type="button" id="searchBtn"  >
       <i class="fas fa-search search"></i>
       </button>
+      
     </form>
   </div>
 </nav>
@@ -358,9 +431,13 @@
   </footer>
 </div>
  </body>
+ 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="js/validacions3.js"></script>
+
 
      <!--Bootstrap Bundle with Popper --> 
    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->

@@ -2,6 +2,11 @@ body{
     font-family:'Montserrat', sans-serif;
     background-color:#f6f6fb ;
 }
+.main,.medium, .bottom{
+    background-color:white;
+    text-align: center; 
+   
+} 
 h1{
     color: #f6f6fb;
     font-family: 'Merriweather', serif;
@@ -21,11 +26,19 @@ h2,h3{
 .exampleModalCenter2LongTitle
 {
     color:#3d9dbd;
+
 }
+
+.searchError{
+    text-align: left;
+    color:yellow;
+    
+}
+
 .check1{
     text-align: left;
     color:#3d9dbd;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .check2{
     text-align: left;
@@ -50,24 +63,34 @@ padding-top: 10px;
  .btn  {
      color:#f6f6fb;
  } 
+ .btnHome:hover {
+     color:white;
+ }
+ .btnHome:focus {
+    color:white;
+}
  .dropdownbg{
      background-color:white ;
     
  }
  .ddb:hover{
+    color:white;
     font-weight: bold;
  }
-
+ .ddb:focus{
+    color:white;
+    font-weight: bold;
+ }
+ .ddb:active   {
+    color:white;
+    font-weight: bold;
+ }
  .dropdown-item:hover{
      background-color:#3d9dbd ;
      color:#f6f6fb;
      font-weight: bolder;
  }     
-  .main,.medium, .bottom{
-    background-color:white;
-    text-align: center;
-   
-} 
+ 
 .medium{
     padding:40px 0px;
 }
@@ -76,18 +99,29 @@ padding-top: 10px;
     width:30%;
     
 }
-.search{
+.btnBuscador{
     background-color: white;
     color:#6eca9c;
-    border:none;
-}
-.search:hover{
-
-background-color:white;
-transform: scale(1.1);
-
-}
+    border:1px solid white;
    
+}
+.btnBuscador:hover{
+
+border:1px solid white;
+background-color: #6eca9c;
+color:white;
+
+
+}
+
+.btnBuscador:focus{
+
+        border:1px solid #6eca9c;
+        background-color: #6eca9c;
+        color:white;
+        
+        
+        }  
 
 .login{
     padding-left: 35px;
