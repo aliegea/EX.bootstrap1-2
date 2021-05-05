@@ -1,15 +1,16 @@
 
 //Validació formulario suscripció
- const form = document.getElementById("myFormRg");
+const form = document.getElementById("myFormRg");
+ form.classList.remove('is-invalid');
+
+function checkInputs(){
+  
  const user=document.getElementById("userName");
  const email=document.getElementById("inputEmail");
  const password=document.getElementById("password");
  const password2=document.getElementById("password2");
  const province=document.getElementById("inputProvince");
  const check=document.getElementById("gridCheck")
- form.classList.remove('is-invalid');
-
-function checkInputs(){
   let errores=0
   const usuarioValor=user.value.trim();
   const emailValor=email.value.trim();
@@ -81,11 +82,13 @@ function validarContraseña (pass){
 }
 
 //validació log in
+
 const form2 = document.getElementById("loGin");
+function checkInputs2(){
+  
 const userMail=document.getElementById("userMail");
 const logPassword=document.getElementById("loginPassword");
 
-function checkInputs2(){
   let errores=0
   
   const logEmail=userMail.value.trim();
